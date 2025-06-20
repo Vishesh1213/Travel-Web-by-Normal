@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in 0.2s ;
+}
+
+
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #111818f5, #087298, rgb(59, 70, 79));
+    /* background-repeat: no-repeat; */
+    color: white;
+    overflow-x: hidden;
+
+}
+
+
+
+
+.activeOpt{
+    border-bottom: 1px solid grey ;
+    padding-bottom: 12px;
+}
+
+
+
+#Travel-options{
+    font-size: 1.7vh;
+
+
+
+   &  select{
+        background-color: rgb(52, 52, 52);
+        color:rgb(218, 242, 242);
+    }
+   & option{
+        background-color: black;
+        color: rgb(230, 230, 230);
+    }
+}
+
+
+
+/* First Page Starting */
+
+
+#page1{
+    height: 120vh;
+    width: 100%;
+    /* background-image: url("/Landscape/Sunset-dark.png"); */
+    /* background-position: center;
+    background-size: cover; */
+
+}
+
+
+#hero1{
+    height: 100vh;
+    width: 90%;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+
+
+
+#navbar{
+    /* background-color: cyan; */
+    width: 100%;
+    height: 7vh;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6vh 0;
+    /* z-index: 100; */
+    /* opacity: 0; */
+    top: 0;
+    margin:0;
+    /* animation: navcome 0.6s linear 0.4s forwards;  */
+    
+}
+
+
+@keyframes navcome{
+    0%{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+#nav-inner{
+    position: fixed;
+    height: 12vh;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* z-index: 100; */
+    top: 0;
+    margin:0;
+    /* padding: 6vh 0; */
+    
+}
+
+
+#nav-left{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    /* border: 1.5px solid red; */
+    
+}
+
+
+li:nth-child(3){
+    border-bottom: 2px solid grey ;
+    padding-bottom: 2px ;
+
+    :hover{
+        border-bottom: 2px solid transparent ;
+    /* padding-bottom: 2px ; */
+    }
+}
+
+
+
+
+
+#nav-mid{
+    width: 30vw;
+    /* border: 1.5px solid red; */
+    padding: 10px 15px;
+    color: white;
+
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        text-decoration: none;
+    
+
+       
+      
+
+        li a {
+            text-decoration: none;
+            color: rgb(71, 241, 224);
+            cursor: pointer;
+
+
+          
+
+
+           
+
+        }
+    }
+    
+}
+
+
+
+
+
+
+#nav-mid a:hover{
+
+        font-size: 21px;
+        font-weight: 500;
+        border-bottom: 1.5px solid darkblue;
+        padding-bottom: 0.5vh;
+
+}
+
+#nav-right{
+    width: 20vw;
+    padding: 10px 15px;
+    /* border: 1.5px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    
+}
+
+
+
+
+#m1-top-text{
+    height: 35%;
+    width: 95%;
+    margin: 0 auto;
+    /* border: 2px solid rgb(50, 255, 248); */
+    padding: 2vh 3vw;
+    text-align: center;
+    /* background-color: cyan; */
+}
+#m1-bot-cards{
+    height: 65%;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid rgb(50, 255, 248);
+    /* background-color: cyan; */
+}
+
+
+
+#m1-title{
+    font-weight: 700;
+    color: rgb(40, 233, 162);
+    
+}
+
+#m1-para{
+    font-weight: 200;
+    /* border: 1px solid cyan; */
+    margin: 2vh 1vh 0 3vh;
+}
+#search-cont{
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+#search-area{
+    border: 1px solid rgb(137, 181, 36);
+    height: 8vh;
+    width: 40vw;
+    /* transform: translateX(50%); */
+    margin: 4vh;
+    border-radius: 21px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+  
+
+
+
+    & input{
+        width: 100%;
+        height: 100%;
+        /* border-end-end-radius: 21px;
+        border-top-right-radius: 21px; */
+        border-radius: 21px;
+        border: none;
+        padding: 2vh 3vw;
+        font-size: 1.2em;
+        color: white;
+
+
+        & :active{
+            border: none;
+            width: 60%;
+        }
+
+    }
+
+    #search-logo{
+        color: white;
+        height: 100%;
+        width: auto;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        filter: drop-shadow(2px 2px 4px  cyan);
+        /* border:2px solid red; */
+        padding: 2vh 1.5vw;
+        border-radius: 21px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+
+
+
+    }
+
+
+
+    
+}
+
+
+#search-area input::placeholder{
+    color: rgb(167, 255, 218);
+    opacity: 0.6;
+
+
+}
+
+
+#category{
+    width: 70%;
+    margin: 0 auto;
+    height: 7vh;
+    /* border: 1px solid red; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap:2vw;
+        /* border: 1px solid red; */
+        padding: 1vh 1vw;
+        
+
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+
+/* CARD Section */
+
+/* End  */
+
+
+
+
+
+/*<-------Page2 Begining -----> */
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("/Landscape/Sunset-dark.png");  */
+     background-position: center;
+    background-size: cover;
+}
+
+
+
+#main2{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 2vh 2vw;
+}
+
+
+#m2-inner{
+    height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+background-color: rgba(128, 128, 128, 0.592);
+    border: 2px solid red;
+}
+
+
