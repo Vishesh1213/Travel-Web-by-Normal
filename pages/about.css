@@ -76,7 +76,7 @@ p {
 .page1 {
   height: 100vh;
   width: 100%;
-  background-image: url("/Landscape/Wolf-mount.png");
+  background-image: url("https://github.com/Vishesh1213/Travel-Web-by-Normal/blob/main/Landscape/Wolf-mount.png?raw=true");
   background-size: cover;
   background-position: center;
   padding: 10px 20px;
