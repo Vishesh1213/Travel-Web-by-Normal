@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: Montserrat-Bold; */
+    font-family: "Montserrat", serif;
+    /* font-weight: ; */
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s linear;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#celeb {
+    position: absolute;
+}
+
+#hero {
+    background-image: url("https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFja2dyb3VuZCUyMGltZyUyMHRlY2h8ZW58MHx8MHx8fDA%3D");
+}
+
+nav {
+    margin-top: 20%;
+    height: 7vw;
+    /* background-color: whitesmoke; */
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 12px 65px 7px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    /* background-image: url("https://logos-world.net/wp-content/uploads/2022/07/Motorola-Symbol.png"); */
+    /* padding: 10px 30px; */
+}
+
+nav #logo {
+    /* border: 1px solid black; */
+    width: 19vh;
+    height: 4vw;
+    background-image: url("./Logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#right {
+    /* border: 1px solid black; */
+    width: 55vh;
+    height: 4vw;
+    padding: 10px 20px;
+    margin-right: 70px;
+    /* gap: 20px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    i {
+        margin-right: 7px;
+        font-size: 22.6px;
+    }
+    h3 {
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 0.98rem;
+    }
+}
+
+#hero {
+    /* border: 1px solid black; */
+    height: 90vh;
+    width: 99vw;
+    /* background-color: rgb(69, 79, 97);ss */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-cont {
+    height: 70vh;
+    border: 1px solid gold;
+    width: 80vw;
+    border-radius: 21px;
+    display: flex;
+    gap: 1px;
+    background-image: url("https://img.freepik.com/free-vector/gradient-geometric-design-dark-background_23-2148425667.jpg?ga=GA1.1.492272234.1727431317&semt=ais_hybrid");
+    /* background-size: cover;
+background-position: center; */
+}
+
+#form-left {
+    height: 100%;
+    border: 1px solid black;
+    width: 50vw;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    background-image: url("https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?ga=GA1.1.492272234.1727431317&semt=ais_hybrid");
+}
+
+#form-right {
+    height: 100%;
+    border: 1px solid black;
+    width: 35vw;
+    background-color: rgba(255, 255, 255, 0.211);
+    backdrop-filter: blur(0.4em);
+    border-top-left-radius: 11px;
+    border-top-right-radius: 21px;
+    border-bottom-right-radius: 21px;
+    input {
+        margin-bottom: 1vh;
+        border-radius: 7px;
+        width: 17vw;
+        height: 2vw;
+        /* padding: 5px 10px; */
+        font-size: 2vh;
+        font-weight: 400;
+        animation: swipe-width 0.9s;
+    }
+}
+
+label {
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: rgb(255, 249, 249);
+}
+
+#inner-form-cont {
+    /* border: 1px solid rgb(190, 25, 25); */
+    border-radius: 21px;
+    height: 100%;
+    position: relative;
+    /* padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px; */
+    padding: 50px 20px 30px 50px;
+    /* padding: 5px 10px; */
+    display: block;
+    & i {
+        color: rgba(21, 255, 208, 0.942);
+        font-size: 3vh;
+        margin-right: 1vh;
+    }
+}
+
+input:hover {
+    background-color: rgb(152, 237, 241);
+    border: 2px solid lightseagreen;
+}
+
+@keyframes swipe-width {
+    0% {
+        width: 5vh;
+    }
+    100% {
+        width: 19vw;
+    }
+}
+
+#btn-sec {
+    height: 20v;
+    /* border: 1px solid red; */
+    width: 50%;
+    padding: 3px 10px;
+    margin: 7% 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    .button {
+        padding: 7px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1vw;
+        border-radius: 10px;
+        cursor: pointer !important;
+        font-weight: 700;
+    }
+    #login {
+        color: rgb(51, 49, 49);
+        font-weight: 700;
+        background: linear-gradient(to top left, rgb(139, 213, 116), rgb(0, 255, 174));
+    }
+    #celeb-1 {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        top: -50px;
+        height: 20x;
+        left: -10px;
+    }
+    #celeb-2 {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        top: -50px;
+        height: 20x;
+        right: -10px;
+    }
+    #signup {
+        color: rgb(129, 129, 129);
+        color: rgb(51, 49, 49);
+        font-weight: 700;
+        background: linear-gradient(to top left, rgb(119, 144, 112), rgb(107, 187, 221));
+    }
+}
+
+
+/* Animation Section */
+
+#Enter {
+    position: absolute;
+    height: 150px;
+}
+
+footer {
+    margin-top: -10%;
+    margin: 0;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: #f0eadf;
+    justify-content: space-around;
+}
+
+.points {
+    color: #9dc1c4;
+    font-size: 30px;
+    font-weight: 600;
+    width: 300px;
+    margin: 26px 0px 10px 15px;
+    padding: 15px 0px 0px 0px;
+}
+
+.footimg:hover {
+    height: 80px;
+    width: 80%;
+    border-radius: 40px;
+    border: double grey;
+    box-shadow: #FEF9F0;
+}
+
+.f {
+    text-shadow: 2px 2px 2px #909090;
+}
+
+.footer-li {
+    padding: 20px 10px 2px 0px;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+.footer-li a {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-li a:hover {
+    text-shadow: 2px 2px 2px hsl(0, 0%, 73%);
+    font-weight: 900;
+    color: rgb(117, 117, 117);
+    letter-spacing: 1px;
+}
+
+.cr {
+    display: flex;
+    background-color: #202A44;
+    font-weight: 900;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+.cori {
+    margin-top: 0.3%;
+    margin-bottom: 0.3%;
+    color: #fbfcde;
+    text-shadow: 2px 2px 2px #909090;
+    font-size: large;
+    height: 30px;
+    justify-content: center;
+}
+
+#linki,
+#insta {
+    color: rgb(15, 15, 15);
+    font-size: 29px;
+}
+
+i {
+    font-size: large;
+    letter-spacing: 4px;
+}
+
+.linki,
+.insta {
+    color: rgb(15, 15, 15);
+    font: 800;
+    font-size: large;
+    text-shadow: 4px 4px 4px hsl(0, 0%, 73%);
+}
+
+.ab,
+.con,
+.pp,
+.tc {
+    color: rgb(15, 15, 15);
+    font: 800;
+    font-size: x-large;
+    text-shadow: 4px 4px 4px hsl(0, 0%, 73%);
+}
+
+#about,
+#contact {
+    font-size: large;
+    text-shadow: 4px 4px 4px hsl(0, 0%, 73%);
+}
+
+.insta:hover {
+    font-size: 30px;
+}
+
+.linki:hover {
+    font-size: 30px;
+}
+
+.logob {
+    background-color: #FEF9F0;
+    display: flex;
+    position: relative;
+}
+
+.logopic {
+    padding-top: 7px;
+}
+
+.imgi {
+    height: 60px;
+    width: 90%;
+}
+
+.navi {
+    padding-top: 5px;
+    margin-top: 16px;
+    margin-left: 27%;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+.na {
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.na:hover {
+    color: rgb(144, 144, 144);
+}
+
+
+/* Navigation bar code ends */
+
+
+/* Search bar code starts*/
+
+.searchb {
+    background-color: #FEF9F0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.search {
+    margin-left: 33%;
+    margin-right: 20%;
+}
+
+.se {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 70%;
+    border-radius: 1000px;
+    border: solid 3px #FEF9F0;
+    box-shadow: 6px 6px 6px rgb(142, 142, 142);
+}
+
+.se:hover {
+    border: solid 3px rgb(160, 160, 160);
+    border-color: #FEF9F0;
+}
