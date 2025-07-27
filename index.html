@@ -13,7 +13,162 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
+<body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fusion Footprints</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/icon2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-router@1.2.8/dist/vanilla-router.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
 <body>
+
+  <!-- Page 1 -->
+  <div id="page1">
+    <div id="main">
+      <div id="cursor"></div>
+
+      <!-- Navbar -->
+      <div id="navbar">
+        <div id="nav-inner">
+          <div id="nav-left">
+            <div id="logo">
+              <h1>LOGO</h1>
+            </div>
+          </div>
+
+          <div id="nav-mid">
+            <ul>
+              <li><a href="./">Home</a></li>
+              <li><a href="./pages/explore.html">Explore</a></li>
+
+              <li>
+                <select style="background-color: transparent; border: none;" name="Travel Options" id="Travel-options">
+                  <option value="Travel Options">Travel Options</option>
+                  <option value="Family Travel">Family Travel</option>
+                  <option value="Solo Travel">Solo Travel</option>
+                  <option value="Group Travel">Group Travel</option>
+                  <option value="Friends Travel">Friends Travel</option>
+                  <option value="Short Trip">Short Trip</option>
+                </select>
+              </li>
+
+              <li><a href="./pages/about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div id="nav-right">
+            <div id="social-media">
+              <span><a href="#"><i class='bx bxl-instagram'></i></a></span>
+              <span><a href="#"><i class='bx bxl-facebook'></i></a></span>
+              <span><a href="#"><i class='bx bxl-linkedin'></i></a></span>
+              <span><a href="#"><i class='bx bxl-whatsapp'></i></a></span>
+            </div>
+          </div>
+
+          <button id="signUp"><a href="/pages/explore.html">Login</a></button>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div id="hero1">
+        <div id="hero1-left">
+          <div id="left-head">
+            <div id="cont-down">
+              <h1>Heading Text by <span style="color: orange;">Random</span></h1>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, alias.</h5>
+            </div>
+          </div>
+
+          <!-- Left Cards -->
+          <div id="left-cards">
+            <div class="card card1">
+              <div class="card-left"></div>
+              <div class="card-right">
+                <span>
+                  <h4>Text Heading</h4>
+                </span>
+                <div id="para">Lorem ipsum adipisicing elit. Alias eos vero earum.</div>
+                <button id="register">Register First</button>
+              </div>
+            </div>
+
+            <div class="card card2">
+              <div class="card-left"></div>
+              <div class="card-right">
+                <span>
+                  <h4>Text Heading</h4>
+                </span>
+                <div id="para">Lorem ipsum adipisicing elit. Alias eos vero earum.</div>
+                <button id="register">Register First</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="hero1-right"></div>
+      </div>
+
+    </div> <!-- End of main -->
+  </div> <!-- End of page1 -->
+
+  <!-- Page 2 -->
+  <div id="page2">
+    <div id="main2">
+      <div class="m-top">
+        <div class="card card1" id="m-card1"></div>
+        <div class="card card2" id="m-card2"></div>
+        <div class="card card3" id="m-card3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3 -->
+  <div id="page3" style="position: absolute;">
+    <div class="page3-left"></div>
+    <div class="page3-right">
+      <h1>Silent roads waiting</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis iste atque id voluptatum unde officiis
+        esse repudiandae iusto aliquid?
+        Sit amet consectetur adipisicing elit. Itaque omnis iste atque id voluptatum unde officiis esse repudiandae
+        iusto aliquid.
+        Sit amet consectetur adipisicing elit. Itaque omnis iste atque id voluptatum unde officiis esse repudiandae
+        iusto aliquid.
+      </p>
+    </div>
+  </div>
+
+  <!-- Page 4 -->
+  <div class="page4">
+
+    <div class="page4-left"></div>
+
+    <div class="page4-right"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
 
   <!-- Page 1 -->
   <div id="page1">
